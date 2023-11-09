@@ -1,3 +1,47 @@
+# ReactArt Authentication App
+
+This project is a simple React application featuring an authentication form with styled components. The application includes a custom `Header` component and an `AuthInputs` component for handling user authentication.
+
+## Project Structure
+
+The project structure is organized as follows:
+
+- `src/components/AuthInputs.jsx`: Component responsible for rendering the authentication form with email and password inputs, validation logic, and styled buttons.
+- `src/components/Header.jsx`: Custom header component displaying a logo, project name, and a brief description.
+- `src/components/Input.jsx`: Custom input component used within `AuthInputs.jsx` for styling input fields.
+- `src/assets/logo.png`: Project logo.
+- `src/App.jsx`: Main application file combining the `Header` and `AuthInputs` components.
+- `README.md`: Documentation providing an overview of the project.
+
+## Components
+
+### AuthInputs Component
+
+The `AuthInputs` component represents the authentication form with email and password inputs. It includes validation logic and styled components for a clean and modern look.
+
+### Header Component
+
+The `Header` component displays a logo, project name, and a brief description. It utilizes styled components for responsive and visually appealing design.
+
+### Input Component
+
+The `Input` component is a custom-styled input field used within the `AuthInputs` component. It provides a consistent and visually pleasing input design.
+
+## Styling
+
+Styled components are used for styling, providing a modular and maintainable approach to styling React components. CSS properties are defined within the styled components, offering a clean and readable styling solution.
+
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/pansani/react-art.git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
