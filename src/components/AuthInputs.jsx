@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /** @format */
 
 import { useState } from "react";
@@ -35,17 +34,6 @@ export default function AuthInputs() {
 
   function handleInputChange(identifier, value) {
     if (identifier === "email") {
-=======
-import { useState } from 'react';
-
-export default function AuthInputs() {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredPassword, setEnteredPassword] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleInputChange(identifier, value) {
-    if (identifier === 'email') {
->>>>>>> origin/master
       setEnteredEmail(value);
     } else {
       setEnteredPassword(value);
@@ -56,16 +44,11 @@ export default function AuthInputs() {
     setSubmitted(true);
   }
 
-<<<<<<< HEAD
   const emailNotValid = submitted && !enteredEmail.includes("@");
-=======
-  const emailNotValid = submitted && !enteredEmail.includes('@');
->>>>>>> origin/master
   const passwordNotValid = submitted && enteredPassword.trim().length < 6;
 
   return (
     <div id="auth-inputs">
-<<<<<<< HEAD
       <ControlContainer>
         <CustomInput
           type="email"
@@ -83,39 +66,13 @@ export default function AuthInputs() {
           label="Password"
         />
       </ControlContainer>
-=======
-      <div className="controls">
-        <p>
-          <label>Email</label>
-          <input
-            type="email"
-            className={emailNotValid ? 'invalid' : undefined}
-            onChange={(event) => handleInputChange('email', event.target.value)}
-          />
-        </p>
-        <p>
-          <label>Password</label>
-          <input
-            type="password"
-            className={passwordNotValid ? 'invalid' : undefined}
-            onChange={(event) =>
-              handleInputChange('password', event.target.value)
-            }
-          />
-        </p>
-      </div>
->>>>>>> origin/master
       <div className="actions">
         <button type="button" className="text-button">
           Create a new account
         </button>
-<<<<<<< HEAD
         <Button className="button" onClick={handleLogin}>
           Sign In
         </Button>
-=======
-        <button className='button' onClick={handleLogin}>Sign In</button>
->>>>>>> origin/master
       </div>
     </div>
   );
